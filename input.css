@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+.btn {
+  @apply font-bold py-2 px-4 rounded;
+}
+.btn-blue {
+  @apply bg-blue-500 text-white;
+}
+.btn-blue:hover {
+  @apply bg-blue-700;
+}
+.main__categories-checkboxs {
+  @apply w-full h-auto text-lg;
+}
+
+.main__categories-checkbox {
+  @apply flex items-stretch;
+}
+.main__products-list {
+  @apply flex flex-wrap justify-between w-full h-[1308px] overflow-y-auto no-scrollbar;
+}
+.main__category-checkbox input {
+  @apply float-left h-[1.125rem] w-[1.125rem] mt-1 mr-2 appearance-none rounded-[0.25rem] border-[0.125rem] border-solid border-secondary-500 outline-none before:pointer-events-none before:absolute before:h-[0.875rem] before:w-[0.875rem] before:scale-0 before:rounded-full before:bg-transparent before:opacity-0 before:shadow-checkbox before:shadow-transparent before:content-[''] checked:border-primary checked:bg-primary checked:before:opacity-[0.16] checked:after:absolute checked:after:-mt-px checked:after:ms-[0.25rem] checked:after:block checked:after:h-[0.8125rem] checked:after:w-[0.375rem] checked:after:rotate-45 checked:after:border-[0.125rem] checked:after:border-l-0 checked:after:border-t-0 checked:after:border-solid checked:after:border-white checked:after:bg-transparent checked:after:content-[''] hover:cursor-pointer hover:before:opacity-[0.04] hover:before:shadow-black/60 focus:shadow-none focus:transition-[border-color_0.2s] focus:before:scale-100 focus:before:opacity-[0.12] focus:before:shadow-black/60 focus:before:transition-[box-shadow_0.2s,transform_0.2s] focus:after:absolute focus:after:z-[1] focus:after:block focus:after:h-[0.875rem] focus:after:w-[0.875rem] focus:after:rounded-[0.125rem] focus:after:content-[''] checked:focus:before:scale-100 checked:focus:before:shadow-checkbox checked:focus:before:transition-[box-shadow_0.2s,transform_0.2s] checked:focus:after:-mt-px checked:focus:after:ms-[0.25rem] checked:focus:after:h-[0.8125rem] checked:focus:after:w-[0.375rem] checked:focus:after:rotate-45 checked:focus:after:rounded-none checked:focus:after:border-[0.125rem] checked:focus:after:border-l-0 checked:focus:after:border-t-0 checked:focus:after:border-solid checked:focus:after:border-white checked:focus:after:bg-transparent rtl:float-right dark:border-neutral-400 dark:checked:border-primary dark:checked:bg-primary;
+}
+.main__product-card {
+  @apply flex max-w-[306px] max-h-[500px];
+}
+.main__product-card_img {
+  @apply p-6;
+}
+.main__product-card_info {
+  @apply p-3 mt-[-16px] text-surface  max-h-[1/2] flex flex-col justify-around;
+}
+.main__product-card_title {
+  @apply mb-2 max-h-[47px] h-full text-xl font-extrabold leading-tight line-clamp-2;
+}
+.main__product-card_description {
+  @apply mb-3 h-[75px] max-h-[75px]  text-base line-clamp-3 hover:line-clamp-none hover:overflow-y-auto hover:no-scrollbar;
+}
+.main_product-card_price-rate-count {
+  @apply max-h-[36px] flex justify-between;
+}
+.main_product-card_price {
+  @apply mb-3 text-base font-semibold;
+}
+.main_product-card_rate {
+  @apply mb-3 text-base font-semibold;
+}
+.main_product-card_count {
+  @apply mb-3 text-base font-semibold;
+}
+.main_product-card_btn-delete {
+  @apply self-center inline-block rounded-full max-w-[56px] max-h-[56px] px-4 py-4  bg-red-600 text-xs font-medium uppercase leading-normal text-white shadow-primary-3 transition duration-150 ease-in-out hover:bg-rose-500 hover:shadow-primary-2 focus:bg-rose-500 focus:shadow-primary-2 focus:outline-none focus:ring-0 active:bg-rose-800 active:shadow-primary-2;
+}
+
+.green-text {
+  @apply text-green-700 font-extrabold;
+}
+.yellow-text {
+  @apply text-yellow-600 font-extrabold;
+}
+.rose-text {
+  @apply text-rose-700 font-extrabold;
+}
+.message-topic {
+  @apply mb-5 text-lg font-normal text-gray-500;
+}
